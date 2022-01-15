@@ -6,7 +6,7 @@ body {
 }
 
 section {
-    margin-top: 50px;
+    margin: 100px 0;
 }
 
 
@@ -123,6 +123,74 @@ i.fas.fa-shopping-cart {
 /*---------------------
  influencer area end
  ---------------------*/
+
 /*-------------------------
   collection area start
  ------------------------- */
+h2.collection-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.collection-box {
+    width: 275px;
+    padding: 15px;
+    border-radius: 5px;
+    /* margin: 0 16px; */
+    box-shadow: 0px 0px 30px 0px #ddd;
+}
+
+.collection-boxes {
+    padding: 0px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+h2.collection-name {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 5px 0;
+    color: #222;
+}
+
+h2.collection-price {
+    font-weight: 400;
+    margin: 5px 0;
+    color: #222;
+}
+
+p.collection-feedback {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p.collection-feedback i {
+    font-size: 10px;
+    color: #ff5200;
+}
+
+p.collection-feedback span {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+
+p.collection-advantage {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 0;
+}
+
+.collection-image {
+    overflow: hidden;
+}
+
+
+.collection-image img {
+    width: 100%;
+}
