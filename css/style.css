@@ -49,17 +49,6 @@ ul.menu-items li:hover a {
     color: #ff5200;
 }
 
-button.influencer-btn:hover {
-    background: #ff5200;
-}
-
-.influencer-image:hover img {
-    transform: rotate(40deg);
-}
-
-.influencer-image img {
-    transition: transform .5s;
-}
 
 
 nav {
@@ -79,13 +68,23 @@ h3.menu-title {
     font-weight: 700;
 }
 
-/* -----------------
- header area end
-------------------- */
+/* -----------------header area end------------------- */
 
 /*------------------------
- influencer area start
+influencer area start
 ------------------------- */
+
+button.influencer-btn:hover {
+    background: #ff5200;
+}
+
+.influencer-image:hover img {
+    transform: rotate(40deg);
+}
+
+.influencer-image img {
+    transition: transform .5s;
+}
 
 section.influencer-area>.container {
     display: flex;
@@ -143,9 +142,7 @@ i.fas.fa-shopping-cart {
 }
 
 
-/*---------------------
- influencer area end
- ---------------------*/
+/*----------------influencer area end---------------*/
 
 /*-------------------------
   collection area start
@@ -159,7 +156,6 @@ h2.collection-title {
     width: 275px;
     padding: 15px;
     border-radius: 5px;
-    /* margin: 0 16px; */
     box-shadow: 0px 0px 30px 0px #ddd;
 }
 
@@ -235,6 +231,11 @@ i.fas.fa-arrow-right.more {
     margin-left: 5px;
 }
 
+/*-------------collection area end------------*/
+
+/*-----------------------------
+ join area start
+ ---------------------------*/
 section.join-area {
     background: #f1f1f1;
     padding: 50px;
@@ -275,6 +276,12 @@ button.join {
     margin: auto;
     cursor: pointer;
 }
+
+/* ---------------join area end ------------- */
+
+/*---------------------
+ footer area start
+ --------------------*/
 
 footer.footer-area {
     background: #0A0826;
@@ -319,11 +326,14 @@ p.copyright {
     color: #ff5200;
 }
 
-/*--------------------------------------
-            Media Queries
----------------------------------------*/
+/*--------------------footer area end-------------------------*/
 
-/*----------------------- mobile view start------------------------------ */
+/*--------------------------------------
+                             Media Queries Start
+              -------------------------------------*/
+/*----------------------- 
+                       mobile view start 
+                ------------------------------ */
 
 @media only screen and (max-width:688px) {
     body {
@@ -337,12 +347,8 @@ p.copyright {
         margin: 0px;
     }
 
-
-
     nav {
-
         flex-direction: column;
-
     }
 
     .menu-items {
@@ -397,6 +403,7 @@ p.copyright {
 
     .join-area {
         margin-top: 0px;
+        display: none;
     }
 
     .collection-box {
@@ -405,15 +412,15 @@ p.copyright {
 
     }
 
-    .join-area {
-        display: none;
-    }
+
 
 }
 
 /*--------------------- mobile view end---------------------------- */
 
-/*--------------------- tablet view start --------------------------*/
+/*--------------------- 
+                       tablet view start 
+                     -----------------------*/
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     body {
@@ -432,9 +439,7 @@ p.copyright {
     }
 
     nav {
-
         flex-direction: column;
-
     }
 
     .menu-items {
@@ -455,7 +460,6 @@ p.copyright {
     }
 
     .influencer-image {
-        width: 100%;
         margin-top: 50px;
     }
 
@@ -489,6 +493,7 @@ p.copyright {
     .collection-boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 65px;
     }
 
     .collection-box:last-child {
@@ -506,6 +511,7 @@ p.copyright {
 
     .join-area {
         margin-top: 0px;
+        display: none;
     }
 
     .collection-box {
@@ -513,11 +519,6 @@ p.copyright {
         margin: 0px;
 
     }
-
-    .join-area {
-        display: none;
-    }
-
 }
 
-/*------------------- tablet view added ---------------------- */
+/*------------------- tablet view end ---------------------- */
